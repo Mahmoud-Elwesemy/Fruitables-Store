@@ -1,0 +1,240 @@
+/* -----------------------  Buttom Style Start ----------------------- */
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sm-square {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-md-square {
+    width: 44px;
+    height: 44px;
+}
+
+.btn-lg-square {
+    width: 56px;
+    height: 56px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.btn.border-secondary {
+    transition: 0.5s;
+}
+
+.btn.border-secondary:hover {
+    background: var(--bs-secondary) !important;
+    color: var(--bs-white) !important;
+}
+/* -----------------------  Buttom Style End ----------------------- */
+/* ------------------------------------------------------------------ */
+/* -----------------------  Navnbar first Style Start ----------------------- */
+.fixed-top {
+    transition: 0.5s;
+    background: var(--bs-white);
+    border: 0;
+}
+
+.topbar {
+    padding: 20px;
+    border-radius: 230px 100px;
+}
+
+.topbar .top-info {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link {
+    font-size: 15px;
+    line-height: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-link a {
+    letter-spacing: 1px;
+}
+
+.topbar .top-link a small:hover {
+    color: var(--bs-secondary) !important;
+    transition: 0.5s;
+}
+
+.topbar .top-link a small:hover i {
+    color: var(--bs-primary) !important;
+}
+/* -----------------------  Navnbar first Style End ----------------------- */
+/* ------------------------------------------------------------------ */
+/* -----------------------  Navnbar scond Style Start ----------------------- */
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.navbar {
+    height: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
+.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        border: 0;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.dropdown .dropdown-menu a:hover {
+    background: var(--bs-secondary);
+    color: var(--bs-primary);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    background: var(--bs-light) !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    opacity: 1;
+}
+
+#searchModal .modal-content {
+    background: rgba(255, 255, 255, .8);
+}
+/* -----------------------  Navnbar scond Style End ----------------------- */
+/* ------------------------------------------------------------------ */         
+/* -----------------------  Footer Style Sart ----------------------- */ 
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -----------------------  Footer Style End ----------------------- */ 
+ 
+@keyframes animatee {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg); 
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.social-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.icone{
+    align-items: center;
+    margin: 15px 30%;
+
+
+}
+#apple,
+#twitter,
+#github,
+#facebook {
+    font-size: 4em; 
+    background-color: #18191f;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    animation: animatee 3s linear infinite;
+    box-shadow: 
+        0 0 15px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.4),
+        inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+#apple { 
+    text-shadow: 0 0 20px #960c0c, 0 0 40px #ff6f00, 0 0 60px #27ae40; 
+}
+
+#twitter { 
+    text-shadow: 0 0 20px #1DA1F2, 0 0 40px #b5b226, 0 0 60px #1DA1F2; 
+    animation-delay: 0.3s; 
+}
+
+#github { 
+    text-shadow: 0 0 20px #dbd70b, 0 0 40px #f718ce, 0 0 60px #3e0fca; 
+    animation-delay: 0.1s; 
+}
+
+#facebook { 
+    text-shadow: 0 0 20px #cfdd09, 0 0 40px #c4ce14, 0 0 60px #b01b57; 
+    animation-delay: 0.7s; 
+}
+
+
+#apple:hover,
+#twitter:hover,
+#github:hover,
+#facebook:hover {
+    transform: scale(1.2);
+    text-shadow: 
+        0 0 30px white, 
+        0 0 50px white, 
+        0 0 70px rgb(209, 200, 19),
+        0 0 90px #ff6f00; 
+}
